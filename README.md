@@ -1,76 +1,25 @@
 # AI-Powered Personalized Learning Path Recommender
 
-## About the Project
+An AI-driven solution that delivers personalized learning experiences by understanding a learner's profile, goals, and skill gaps — then generating a structured, adaptive learning roadmap.
 
-Choosing what to learn can be confusing, especially when there are hundreds of courses and resources available online.
+## 📌 Problem Statement
 
-This project is an AI-powered learning assistant that helps students create a learning path according to their goals, current skills, interests, and previous learning.
+Online learning platforms offer thousands of courses across diverse domains. While recommendation systems can suggest relevant courses, learners often struggle to identify the right *sequence* of learning resources needed to achieve a specific goal. Different learners have different skill levels, interests, career aspirations, and learning preferences — making a one-size-fits-all approach ineffective.
 
-Instead of giving everyone the same roadmap, it tries to understand the learner and suggests what they should learn next.
+This project bridges that gap with an AI-powered assistant that understands a learner's profile, analyzes their objectives, identifies skill gaps, and generates a structured roadmap of courses, projects, and assessments tailored to the individual.
 
-## What Our Project Does
+## 🎯 Objective
 
-The user can enter things like:
+Design and build an intelligent learning assistant that:
 
-> "I know basic Java and want to become a backend developer."
+- Recommends personalized learning paths based on a learner's interests, goals, previous learning history, and skill level
+- Generates a structured learning roadmap
+- Explains the reasoning behind its recommendations
+- Adapts suggestions based on user feedback and progress
 
-Based on this information, the system can:
+## ✨ Features
 
-- Understand the user's goal
-- Check their current skill level
-- Find skill gaps
-- Suggest topics and resources
-- Create a step-by-step learning roadmap
-- Suggest projects and assessments
-- Track the user's progress
-- Update recommendations based on their progress and feedback
-
-## Main Features
-
-### 1. User Profile
-
-The user can provide information about:
-
-- Current skills
-- Experience level
-- Interests
-- Completed courses
-- Career goal
-- Learning preferences
-
-### 2. AI Learning Assistant
-
-Users can interact with the system using normal language and ask questions about their learning path.
-
-For example:
-
-> "What should I learn after Java OOPs?"
-
-The assistant can suggest the next topics based on their profile.
-
-### 3. Skill Gap Analysis
-
-The system compares the user's current skills with the skills needed for their target career and shows what they still need to learn.
-
-### 4. Personalized Roadmap
-
-The system creates a roadmap instead of simply suggesting random courses.
-
-Example:
-
-```text
-Java Basics
-    ↓
-OOPs
-    ↓
-Collections
-    ↓
-SQL
-    ↓
-REST APIs
-    ↓
-Spring Boot
-    ↓
-Spring Data JPA
-    ↓
-Backend Project
+| Feature | Description |
+|---|---|
+| 💬 Conversational Interface | Learners describe their goals in natural language |
+| 🧑‍
