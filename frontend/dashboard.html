@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mission Control — PathWise</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/road.css">
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="dash-app">
+<div class="grid-backdrop"></div>
+
+<div class="app-shell">
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <span class="logo-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+      PATHWISE
+    </a>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link active"><span class="ic">🧭</span>Dashboard</a>
+      <a href="roadmap.html" class="sidebar-link"><span class="ic">🗺</span>My Roadmap</a>
+      <a href="projects.html" class="sidebar-link"><span class="ic">🧩</span>Projects</a>
+      <a href="index.html#paths" class="sidebar-link"><span class="ic">🧭</span>Explore Paths</a>
+      <a href="profile.html" class="sidebar-link"><span class="ic">👤</span>Profile</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="sidebar-user">
+        <span class="mini-avatar" data-user-avatar>S</span>
+        <span><span class="u-name" data-user-name style="display:block;">Student</span><span class="u-role">Frontend Track</span></span>
+      </a>
+      <button class="sidebar-link" data-theme-toggle style="width:100%;text-align:left;"><span class="ic" data-theme-icon>🌙</span>Toggle Theme</button>
+      <button class="sidebar-link" data-logout style="width:100%;text-align:left;color:var(--danger);"><span class="ic">⏻</span>Log Out</button>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <div class="app-topbar">
+      <button id="sidebar-open" class="hamburger" style="display:flex;"><span></span><span></span><span></span></button>
+      <span class="logo">PATHWISE</span>
+      <a href="profile.html" class="mini-avatar" data-user-avatar style="text-decoration:none;">S</a>
+    </div>
+
+<div class="container dash-shell" style="position:relative;">
+  <div class="aurora" style="position:absolute;top:-40px;left:0;right:0;height:520px;z-index:0;"><span class="a1"></span><span class="a2"></span></div>
+  <div style="position:relative;z-index:1;">
+  <div class="dash-head">
+    <div>
+      <h1>WELCOME BACK, <span data-user-name>STUDENT</span> 👋</h1>
+      <p>Your next skill is waiting.</p>
+    </div>
+    <div class="streak-badge">🔥 <span id="streak-count">0</span> DAY STREAK</div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="label">Overall Progress</div>
+      <div class="value" id="stat-progress">0%</div>
+      <div class="mini-bar"><i id="stat-progress-bar" style="width:0%;"></i></div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Topics Completed</div>
+      <div class="value" id="stat-topics">0 / 0</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Learning Streak</div>
+      <div class="value" id="stat-streak">🔥 0 Days</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Current Path</div>
+      <div class="value" id="stat-path" style="font-size:1.15rem;">—</div>
+    </div>
+  </div>
+
+  <div class="current-mission-card glass">
+    <div>
+      <div class="m-label">CURRENT MISSION</div>
+      <h2 id="current-mission-name">—</h2>
+      <p>Continue from where you stopped.</p>
+    </div>
+    <a href="learning.html" class="btn btn-primary" id="continue-btn">CONTINUE JOURNEY →</a>
+  </div>
+
+  <div class="journey-wrap">
+    <h2 class="journey-title">YOUR LEARNING JOURNEY</h2>
+    <div class="road-card">
+      <div class="road-head">
+        <span class="r-hint">Hover the road to inspect any mission. Click an unlocked node to jump in.</span>
+        <span class="road-badge" id="road-badge">0 / 0 MISSIONS</span>
+      </div>
+      <div class="road-wrap" id="road-wrap"></div>
+      <div class="road-progress-readout">
+        <span class="road-progress-pct" id="road-pct">0%</span>
+        <div class="road-progress-track"><div class="road-progress-fill" id="road-fill"></div></div>
+        <span class="road-progress-pct" id="road-pct-label">JOURNEY</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:70px;">
+    <h2 class="journey-title">UPCOMING MISSIONS</h2>
+    <div class="upcoming-grid" id="upcoming-grid"></div>
+  </div>
+
+  <div>
+    <h2 class="journey-title">ACHIEVEMENTS</h2>
+    <div class="ach-grid" id="ach-grid"></div>
+  </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/config.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/data.js"></script>
+<script src="js/progressTracker.js"></script>
+<script src="js/journeyRoad.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/sidebar.js"></script>
+</body>
+</html>

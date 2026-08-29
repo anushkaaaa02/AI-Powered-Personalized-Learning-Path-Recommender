@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Path Identified — PathWise</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="rec-app">
+<div class="grid-backdrop"></div>
+<div class="aurora" style="position:fixed;inset:0;z-index:-1;"><span class="a1"></span><span class="a2"></span><span class="a3"></span><span class="a4"></span></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+      PATHWISE
+    </a>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle><span data-theme-icon>🌙</span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="container rec-shell">
+  <div class="rec-head">
+    <span class="eyebrow" style="justify-content:center;">RECOMMENDATION</span>
+    <h1 class="section-title">PATH IDENTIFIED.</h1>
+  </div>
+
+  <div class="rec-main glass">
+    <span class="eyebrow" style="justify-content:center;">YOUR RECOMMENDED CAREER</span>
+    <div class="rec-path-name" id="rec-path-name">—</div>
+
+    <div class="match-ring">
+      <svg width="130" height="130" viewBox="0 0 130 130">
+        <circle cx="65" cy="65" r="54" fill="none" stroke="var(--border)" stroke-width="8"/>
+        <circle id="match-circle" cx="65" cy="65" r="54" fill="none" stroke="url(#grad)" stroke-width="8" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#8B5CF6"/>
+            <stop offset="100%" stop-color="#38BDF8"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="pct" id="match-pct">0%</span>
+    </div>
+    <div style="font-family:var(--font-mono);color:var(--text-secondary);font-size:.8rem;letter-spacing:.08em;">MATCH</div>
+
+    <div style="margin-top:30px;text-align:left;">
+      <div class="eyebrow">WHY THIS PATH?</div>
+      <ul class="why-list" id="why-list"></ul>
+    </div>
+
+    <div style="margin-top:30px;">
+      <div class="eyebrow" style="justify-content:center;">RECOMMENDED SKILLS</div>
+      <div class="rec-skills" id="rec-skills"></div>
+    </div>
+
+    <div class="duration-box">ESTIMATED JOURNEY: <span id="rec-duration">—</span></div>
+
+    <div class="rec-actions">
+      <button class="btn btn-primary" id="unlock-btn">UNLOCK MY ROADMAP →</button>
+      <button class="btn btn-ghost" id="explore-btn">EXPLORE OTHER PATHS</button>
+    </div>
+  </div>
+
+  <div class="alt-title">ALTERNATIVE RECOMMENDATIONS</div>
+  <div class="alt-grid" id="alt-grid"></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/data.js"></script>
+<script src="js/recommendation-page.js"></script>
+</body>
+</html>

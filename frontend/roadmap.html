@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Roadmap — PathWise</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="roadmap-app">
+<div class="grid-backdrop"></div>
+
+<div class="app-shell">
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <span class="logo-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+      PATHWISE
+    </a>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link"><span class="ic">🧭</span>Dashboard</a>
+      <a href="roadmap.html" class="sidebar-link active"><span class="ic">🗺</span>My Roadmap</a>
+      <a href="projects.html" class="sidebar-link"><span class="ic">🧩</span>Projects</a>
+      <a href="index.html#paths" class="sidebar-link"><span class="ic">🧭</span>Explore Paths</a>
+      <a href="profile.html" class="sidebar-link"><span class="ic">👤</span>Profile</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="profile.html" class="sidebar-user">
+        <span class="mini-avatar" data-user-avatar>S</span>
+        <span><span class="u-name" data-user-name style="display:block;">Student</span><span class="u-role">Frontend Track</span></span>
+      </a>
+      <button class="sidebar-link" data-theme-toggle style="width:100%;text-align:left;"><span class="ic" data-theme-icon>🌙</span>Toggle Theme</button>
+      <button class="sidebar-link" data-logout style="width:100%;text-align:left;color:var(--danger);"><span class="ic">⏻</span>Log Out</button>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <div class="app-topbar">
+      <button id="sidebar-open" class="hamburger" style="display:flex;"><span></span><span></span><span></span></button>
+      <span class="logo">PATHWISE</span>
+      <a href="profile.html" class="mini-avatar" data-user-avatar style="text-decoration:none;">S</a>
+    </div>
+
+<div class="container roadmap-shell">
+  <span class="eyebrow">YOUR LEARNING JOURNEY</span>
+  <h1 class="section-title" id="roadmap-path-name" style="margin-bottom:50px;">ROADMAP</h1>
+  <div id="roadmap-phases"></div>
+</div>
+
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/data.js"></script>
+<script src="js/progressTracker.js"></script>
+<script src="js/roadmap.js"></script>
+<script src="js/sidebar.js"></script>
+</body>
+</html>

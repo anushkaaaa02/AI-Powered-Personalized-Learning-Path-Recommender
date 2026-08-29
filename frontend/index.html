@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PathWise — Navigate Your Future</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="grid-backdrop"></div>
+<div class="particles"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      </span>
+      PATHWISE
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#paths">Explore Paths</a>
+      <a href="index.html#mission">How It Works</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#about">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle><span data-theme-icon>🌙</span></button>
+      <a href="login.html" class="btn btn-ghost btn-sm" data-auth-signedout>Sign In</a>
+      <a href="signup.html" class="btn btn-primary btn-sm" data-auth-signedout>Get Started →</a>
+      <a href="dashboard.html" class="btn btn-primary btn-sm" data-auth-signedin style="display:none;">Mission Control →</a>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="index.html#paths">Explore Paths</a>
+  <a href="index.html#mission">How It Works</a>
+  <a href="projects.html">Projects</a>
+  <a href="index.html#about">About</a>
+  <a href="signup.html" data-auth-signedout>Get Started →</a>
+  <a href="dashboard.html" data-auth-signedin style="display:none;">Mission Control →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span><span class="a4"></span></div>
+  <div class="star-field" id="star-field"></div>
+  <div class="mountains">
+    <svg class="m-back" viewBox="0 0 1600 400" preserveAspectRatio="none" height="260">
+      <path d="M0,400 L0,220 L180,120 L340,210 L520,90 L720,200 L900,60 L1100,190 L1300,110 L1480,210 L1600,150 L1600,400 Z" fill="#8B5CF6" opacity="0.5"/>
+    </svg>
+    <svg class="m-front" viewBox="0 0 1600 400" preserveAspectRatio="none" height="200">
+      <path d="M0,400 L0,280 L220,180 L420,260 L640,150 L860,250 L1080,140 L1300,240 L1480,190 L1600,230 L1600,400 Z" fill="#38BDF8" opacity="0.55"/>
+    </svg>
+  </div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">NAVIGATE YOUR FUTURE</span>
+      <h1>YOUR CAREER<br>HAS A <span class="gradient-word">PATH.</span></h1>
+      <div class="line2">DISCOVER IT. <span>BUILD IT.</span> OWN IT.</div>
+      <p class="hero-desc">Stop learning random technologies without direction. PathWise analyzes your profile and helps you discover the right career path, skills, projects, and learning journey.</p>
+      <div class="hero-actions">
+        <a href="signup.html" class="btn btn-primary">START YOUR JOURNEY →</a>
+        <a href="#paths" class="btn btn-ghost">EXPLORE PATHS</a>
+      </div>
+    </div>
+    <div class="universe">
+      <svg viewBox="0 0 520 520" id="universe-svg">
+        <defs>
+          <linearGradient id="energyGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="520" y2="520">
+            <stop offset="0%" stop-color="#8B5CF6"/>
+            <stop offset="100%" stop-color="#38BDF8"/>
+          </linearGradient>
+        </defs>
+        <g id="universe-lines"></g>
+      </svg>
+      <div class="universe-ring"></div>
+      <div class="universe-center" id="universe-center">YOU</div>
+      <div class="node center-anchor" data-node="web" style="top:0;left:50%;transform:translateX(-50%);animation-delay:0s;">
+        <div class="dot"></div>WEB DEVELOPMENT<div class="desc"></div>
+      </div>
+      <div class="node" data-node="ai" style="top:20%;right:-4%;animation-delay:.4s;">
+        <div class="dot"></div>ARTIFICIAL INTELLIGENCE<div class="desc"></div>
+      </div>
+      <div class="node" data-node="data" style="bottom:16%;right:-4%;animation-delay:.8s;">
+        <div class="dot"></div>DATA ANALYTICS<div class="desc"></div>
+      </div>
+      <div class="node center-anchor" data-node="cyber" style="bottom:0;left:50%;transform:translateX(-50%);animation-delay:1.2s;">
+        <div class="dot"></div>CYBERSECURITY<div class="desc"></div>
+      </div>
+      <div class="node" data-node="mobile" style="bottom:16%;left:-4%;animation-delay:1.6s;">
+        <div class="dot"></div>MOBILE DEVELOPMENT<div class="desc"></div>
+      </div>
+      <div class="node" data-node="uiux" style="top:20%;left:-4%;animation-delay:2s;">
+        <div class="dot"></div>UI/UX DESIGN<div class="desc"></div>
+      </div>
+      <span class="satellite s1"></span>
+      <span class="satellite s2"></span>
+      <span class="satellite s3"></span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust">
+  <div class="container trust-inner">
+    <span class="trust-label">BUILT FOR FUTURE BUILDERS</span>
+    <div class="trust-items">
+      <span>Students</span><span>Developers</span><span>Dreamers</span><span>Innovators</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">THE PROBLEM</span>
+      <h2 class="section-title">STOP LEARNING<br>WITHOUT DIRECTION.</h2>
+    </div>
+    <div class="problem-grid">
+      <div class="p-card reveal">
+        <div class="p-num">01</div>
+        <h3>TOO MANY OPTIONS</h3>
+        <p>Students often do not know which technology field is right for them.</p>
+      </div>
+      <div class="p-card reveal">
+        <div class="p-num">02</div>
+        <h3>RANDOM LEARNING</h3>
+        <p>Students learn disconnected technologies without following a structured roadmap.</p>
+      </div>
+      <div class="p-card reveal">
+        <div class="p-num">03</div>
+        <h3>NO CLEAR NEXT STEP</h3>
+        <p>Students often do not know what they should learn next to reach their career goals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section" id="mission">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">HOW IT WORKS</span>
+      <h2 class="section-title">YOUR MISSION.</h2>
+    </div>
+    <div class="mission-track">
+      <div class="mission-card reveal">
+        <span class="m-tag">MISSION 01</span>
+        <h3>IDENTIFY YOURSELF.</h3>
+        <p style="color:var(--text-secondary);font-size:.9rem;">Tell PathWise about:</p>
+        <ul>
+          <li>Your interests</li><li>Existing skills</li><li>Experience level</li>
+          <li>Career goal</li><li>Available learning time</li>
+        </ul>
+        <span class="status-pill status-ready"><span class="dot"></span>STATUS: READY</span>
+      </div>
+      <div class="mission-card reveal">
+        <span class="m-tag">MISSION 02</span>
+        <h3>ANALYZE YOUR PROFILE.</h3>
+        <p style="color:var(--text-secondary);font-size:.9rem;">The system analyzes:</p>
+        <ul>
+          <li>Interests</li><li>Skills</li><li>Experience</li>
+          <li>Career goals</li><li>Learning availability</li>
+        </ul>
+        <span class="status-pill status-processing"><span class="dot"></span>STATUS: PROCESSING</span>
+      </div>
+      <div class="mission-card reveal">
+        <span class="m-tag">MISSION 03</span>
+        <h3>UNLOCK YOUR PATH.</h3>
+        <p style="color:var(--text-secondary);font-size:.9rem;margin-top:6px;">Receive your personalized career recommendation and learning roadmap.</p>
+        <span class="status-pill status-locked" style="margin-top:34px;"><span class="dot"></span>STATUS: LOCKED</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATHS -->
+<section class="section" id="paths">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">EXPLORE CAREER PATHS</span>
+      <h2 class="section-title">CHOOSE YOUR ROUTE.</h2>
+    </div>
+    <div class="paths-grid">
+      <div class="path-card reveal">
+        <div class="path-top"><span class="path-num">01</span><span class="path-icon">◧</span></div>
+        <h3>FRONTEND DEVELOPMENT</h3>
+        <p>Build websites and modern digital experiences.</p>
+        <div class="skill-chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">React</span></div>
+        <a href="signup.html" class="btn btn-ghost btn-sm btn-block">EXPLORE ROUTE →</a>
+      </div>
+      <div class="path-card reveal">
+        <div class="path-top"><span class="path-num">02</span><span class="path-icon">◫</span></div>
+        <h3>BACKEND DEVELOPMENT</h3>
+        <p>Build APIs, databases, servers, and application systems.</p>
+        <div class="skill-chips"><span class="chip">Node.js</span><span class="chip">SQL</span><span class="chip">APIs</span></div>
+        <a href="signup.html" class="btn btn-ghost btn-sm btn-block">EXPLORE ROUTE →</a>
+      </div>
+      <div class="path-card reveal">
+        <div class="path-top"><span class="path-num">03</span><span class="path-icon">◈</span></div>
+        <h3>ARTIFICIAL INTELLIGENCE</h3>
+        <p>Build intelligent systems using AI and machine learning.</p>
+        <div class="skill-chips"><span class="chip">Python</span><span class="chip">ML</span><span class="chip">Data</span></div>
+        <a href="signup.html" class="btn btn-ghost btn-sm btn-block">EXPLORE ROUTE →</a>
+      </div>
+      <div class="path-card reveal">
+        <div class="path-top"><span class="path-num">04</span><span class="path-icon">◩</span></div>
+        <h3>DATA ANALYTICS</h3>
+        <p>Transform data into useful insights.</p>
+        <div class="skill-chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Viz</span></div>
+        <a href="signup.html" class="btn btn-ghost btn-sm btn-block">EXPLORE ROUTE →</a>
+      </div>
+      <div class="path-card reveal">
+        <div class="path-top"><span class="path-num">05</span><span class="path-icon">◭</span></div>
+        <h3>CYBERSECURITY</h3>
+        <p>Protect systems, networks, and digital information.</p>
+        <div class="skill-chips"><span class="chip">Networking</span><span class="chip">Linux</span><span class="chip">Security</span></div>
+        <a href="signup.html" class="btn btn-ghost btn-sm btn-block">EXPLORE ROUTE →</a>
+      </div>
+      <div class="path-card reveal">
+        <div class="path-top"><span class="path-num">06</span><span class="path-icon">◪</span></div>
+        <h3>MOBILE DEVELOPMENT</h3>
+        <p>Build applications for Android and mobile platforms.</p>
+        <div class="skill-chips"><span class="chip">Kotlin</span><span class="chip">APIs</span><span class="chip">UI</span></div>
+        <a href="signup.html" class="btn btn-ghost btn-sm btn-block">EXPLORE ROUTE →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TERMINAL -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal" style="margin:0 auto 50px;text-align:center;max-width:600px;">
+      <span class="eyebrow" style="justify-content:center;">SYSTEM PREVIEW</span>
+      <h2 class="section-title">SEE THE ENGINE THINK.</h2>
+    </div>
+    <div class="terminal reveal">
+      <div class="terminal-head"><span></span><span></span><span></span></div>
+      <div style="color:#888;margin-bottom:14px;">PATHWISE TERMINAL v1.0</div>
+      <div class="terminal-body" data-terminal></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer footer-expanded">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:14px;">
+          <span class="logo-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+          PATHWISE
+        </div>
+        <p class="footer-desc">Navigate your future. An AI-guided learning path platform helping students discover the right tech career and build toward it, one mission at a time.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="GitHub">⌥</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-heading">GET IN TOUCH</span>
+        <a href="mailto:hello@pathwise.app">hello@pathwise.app</a>
+        <p class="footer-addr">PathWise Learning Labs<br>Tech Park Tower B, Sector 62<br>Noida, Uttar Pradesh 201301</p>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-heading">QUICK LINKS</span>
+        <a href="index.html">Home</a>
+        <a href="index.html#paths">Explore Paths</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="signup.html">Get Started</a>
+      </div>
+
+      <div class="footer-col footer-map-col">
+        <span class="footer-heading">LOCATION</span>
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=Sector+62,+Noida,+Uttar+Pradesh&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="PathWise office location"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-tag">© 2026 PathWise. Navigate your future.</span>
+      <span class="footer-tag">Sample contact details for demo purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

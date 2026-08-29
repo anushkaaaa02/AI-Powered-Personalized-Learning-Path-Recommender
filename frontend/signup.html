@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account — PathWise</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="grid-backdrop"></div>
+<div class="aurora" style="position:fixed;inset:0;z-index:-1;"><span class="a1"></span><span class="a2"></span><span class="a3"></span><span class="a4"></span></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+      PATHWISE
+    </a>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle><span data-theme-icon>🌙</span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="auth-wrap">
+  <div class="auth-side">
+    <div class="auth-nodes">
+      <span style="top:20%;left:15%;"></span>
+      <span style="top:60%;left:70%;animation-delay:1s;"></span>
+      <span style="top:80%;left:30%;animation-delay:2s;"></span>
+      <span style="top:35%;left:80%;animation-delay:3s;"></span>
+    </div>
+    <div class="logo"><span class="logo-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" stroke="currentColor" stroke-width="1.4"/></svg></span>PATHWISE</div>
+    <span class="eyebrow">NAVIGATE YOUR FUTURE</span>
+    <h1>Create your account and begin your personalized learning journey.</h1>
+    <p>Answer a short assessment, get matched to a career path, and unlock a roadmap built around your goals.</p>
+  </div>
+
+  <div class="auth-form-side">
+    <form class="auth-form" id="signup-form" novalidate>
+      <span class="eyebrow">GET STARTED</span>
+      <h2>CREATE YOUR ACCOUNT</h2>
+      <p class="sub">It only takes a minute.</p>
+
+      <div class="field">
+        <label for="su-name">Full Name</label>
+        <input type="text" id="su-name" placeholder="Aditi Sharma" autocomplete="name">
+        <div class="field-error"></div>
+      </div>
+      <div class="field">
+        <label for="su-email">Email Address</label>
+        <input type="email" id="su-email" placeholder="you@example.com" autocomplete="email">
+        <div class="field-error"></div>
+      </div>
+      <div class="field">
+        <label for="su-password">Password</label>
+        <input type="password" id="su-password" placeholder="••••••••" autocomplete="new-password">
+        <div class="field-error"></div>
+      </div>
+      <div class="field">
+        <label for="su-confirm">Confirm Password</label>
+        <input type="password" id="su-confirm" placeholder="••••••••" autocomplete="new-password">
+        <div class="field-error"></div>
+      </div>
+      <div class="field">
+        <label for="su-education">Education Level (optional)</label>
+        <select id="su-education">
+          <option value="">Select...</option>
+          <option value="highschool">High School</option>
+          <option value="undergrad">Undergraduate</option>
+          <option value="postgrad">Postgraduate</option>
+          <option value="selftaught">Self-Taught</option>
+        </select>
+      </div>
+
+      <label class="checkbox-row">
+        <input type="checkbox" id="su-terms">
+        <span>I agree to the terms and conditions.</span>
+      </label>
+
+      <button type="submit" class="btn btn-primary btn-block">CREATE ACCOUNT →</button>
+      <div class="form-msg" id="signup-msg"></div>
+
+      <div class="auth-foot">
+        Already have an account? <a href="login.html">SIGN IN →</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
